@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Keanu's Blog</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="main">
+        <h1>Javascript Fundamentals - The DOM</h1>
+        <h2>
+          <em
+            >For this post I'll be talking a bit about some of the basics of
+            javascript & the DOM</em
+          >
+        </h2>
+        <h3>25 January 2024</h3>
+
+        <h4>Javascript and how it relates to to HTML & CSS</h4>
+        <p>
+          Javascript is often thought of as the "action" behind a webpage.
+          Meaning that if you fill out a form, click a button, add something to
+          a watchlist- all of these things are making little actions happen
+          behind the scenes that gives a webpage its interactivity, and thats
+          all thanks to Javascript!
+        </p>
+
+        <p>
+          One of the most common analogies for how HTML, CSS & Javascript fit
+          together is the human body- skeleton, beauty and the brain. The HTML
+          is the strong foundation of a skeleton, it gives space and outlines
+          where everything else in the body goes. The CSS is our outward
+          appearance, our hairstyle, eye-colour and fashion choices. Javascript
+          is the brain; the thinking, the logic, the thing that controls our
+          decision making and how we respond to everything.
+        </p>
+
+        <img
+          width="500px"
+          src="../img/analogy.jpeg"
+          alt="image showing differences in html css js"
+        />
+
+        <h4>Control flow</h4>
+
+        <p>
+          In computer programming control flow refers to the order that your
+          pieces of code (functions, statements etc) run in. Computers are
+          amazing at running instructions on their own, but arent too good at
+          making decisions. It's our job as programmers to provide lots of sets
+          of instructions to our computer friends, and the conditions for when
+          to use each set. having "good" control flow means your code is more
+          flexible and readable, and accounts for lots of situations.
+        </p>
+
+        <p>
+          The best analogy I could find is imagining traffic lights. When we
+          come to a traffic light there are 3 options(possible sets of
+          instructions); green, red or orange light. Each of these lights give
+          you the instructions of what to do next to control the flow of
+          traffic. This is similiar to programming control flow because its
+          putting checks in place to make sure its safe to proceed with your
+          code.
+        </p>
+
+        <h4>Loops</h4>
+
+        <p>
+          Loops are used in programming to repeat an action some number of times
+          until they are told to stop. We give them a set of conditions that as
+          long as theyre met, they will just keep running and doing whatever
+          piece of code we have writtin inside them. as soon as those conditions
+          aren't met, the loop will stop. A concrete example of a loop could be
+          washing dishes;
+        </p>
+        <p>
+          when we wash dishes we mostly repeat the same cleaning action until we
+          run out of dishes to wash, you can imagine the loop running like this;
+          1 - check if there are any dirty dishes left, if yes, go to step 2; if
+          not you've finished! end the loop. 2 - get the dirty dish and wash it,
+          then go back to step 1. In this example you can see how loops are
+          ideal for repeating simple actions again and again until you reach an
+          ending condition (in this example its running out of dishes).
+        </p>
+
+        <h4>What is the DOM?</h4>
+        <p>
+          The document object model (DOM) is pretty much everything you see
+          inside of your browser tab window. It's a big tree of all the objects
+          inside that website, and gives javascript a bunch of ways to hook into
+          the different parts of a website by interacting with these objects.
+        </p>
+
+        <p>
+          The DOM gives developers a really easy way to find and make changes to
+          parts of the HTML. The simplest way of seeing this in action is by
+          "inspecting" elements and temporarily changing them. By right clicking
+          and selecting inspect, you pull up the devtools. Right there you
+          should see a list of all the HTML, and be able to select elements and
+          make small changes, and you will instantly see those applied in the
+          DOM! This is always temporary when using devtools but can be permanent
+          or more dynamic when using Javascript.
+        </p>
+
+        <img
+          width="600px"
+          src="../img/dominteraction.png"
+          alt="editing an h1 element"
+        />
+        <p><em>using devtools to highlight and change the H1</em></p>
+
+        <h4>Arrays & Objects</h4>
+        <p>
+          Arrays and objects are simply containers used to store data. Arrays
+          are more like a simple list, where you have an amount of items within
+          them, and to access those items you referance an "index", or what
+          number the item you want appears in the list order.
+        </p>
+        <img width="600px" src="../img/array.png" alt="" />
+        <p>
+          In the above example, we have an array of three names, and to access
+          and assign the correct name to the variable "myName" we simply put the
+          index in using square brackets. But wait! theres 3 names in the array,
+          but to access the last one we only gave it 2? This is because Arrays
+          begin counting at 0! Something that will definatly catch you out in
+          the beginning.
+        </p>
+
+        <p>
+          Objects are slightly more complicated, but at the end of the day are
+          just a way to store information as well. They use key value pairs so
+          you can match a name and a value together, making it easier to access
+          in the future.
+        </p>
+        <img width="600px" src="../img/object.png" alt="" />
+
+        <p>
+          In the above example I've made a "person" object, and given some keys
+          and values to build the properties of this object. At the bottom you
+          can see how easy having these key value pairs makes accessing the
+          properties, as I can look into the object and pull out properties by
+          simply writing "person.firstName" - "person" referancing the object we
+          made, and "firstName" representing a property we created.
+        </p>
+
+        <h4>Fun-ctions</h4>
+        <p>
+          I think the simplest definition of a function is a block of code that
+          performs a specific task. you write a set of actions that happen when
+          the function is "called"(told to run), and everytime you call it, that
+          same set of actions happens again.
+        </p>
+        <p>
+          Functions are super useful as they can cut out having to write the
+          same code over and over. Let's say in your javascript you constantly
+          have to add two strings together, and all throughout your code you've
+          written the same thing at multiple times to add strings together. By
+          writing a single function that does this once, and then calling it
+          when you need to add strings together, You've not only reduced the
+          complication of your code, but made it more reusable.
+        </p>
+
+        <p>
+          By using functions correctly you dont need to write heaps of lines of
+          code to do a common task, and make your code more reusable and
+          modular!
+        </p>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let peoplesNames = ['Anna', 'Joshua', 'Keanu']
+  let myName = peoplesNames[2]
+
+  const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 50,
+    eyeColor: 'blue',
+  }
+
+  let personsName = person.firstName
+</script>
