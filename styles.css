@@ -1,210 +1,230 @@
-@CHARSET "ISO-8859-1";
+@charset "ISO-8859-1";
 /* Reset CSS
  * --------------------------------------- */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-    margin: 0;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
 }
-a{
-	text-decoration:none;
+a {
+  text-decoration: none;
 }
 table {
-    border-spacing: 0;
+  border-spacing: 0;
 }
-fieldset,img {
-    border: 0;
+fieldset,
+img {
+  border: 0;
 }
-address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
 }
-strong{
-	font-weight: bold;
+strong {
+  font-weight: bold;
 }
-ol,ul {
-    list-style: none;
-    margin:0;
-    padding:0;
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 ol {
-	display: none;
+  display: none;
 }
-caption,th {
-    text-align: left;
-
+caption,
+th {
+  text-align: left;
 }
 
-
-q:before,q:after {
-    content:'';
+q:before,
+q:after {
+  content: '';
 }
-abbr,acronym { border: 0;
+abbr,
+acronym {
+  border: 0;
 }
 
 /* Custom CSS
  * --------------------------------------- */
-body{
-font-family: 'Montserrat', sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
   font-size: 10vw;
- 		margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    line-height: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  line-height: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 h2 {
-	font-size: 5vw;
+  font-size: 5vw;
 }
 
-p{
-	font-size: 3.5vw;
+p {
+  font-size: 3.5vw;
 
-		opacity: 0.6;
- 		margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.section{
-	text-align: center;
-
+.section {
+  text-align: center;
 }
 
 /* Slider controls */
 .unslider-arrow .next {
-	right: 30px;
+  right: 30px;
 }
-
-
-
 
 /* Menu
  * --------------------------------------- */
 #menu li {
-	display:inline-block;
-	margin: 0px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 2px;
+  display: inline-block;
+  margin: 0px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-#menu li.active{
-
-    background-color: #BBDEFB;
-    background: #BBDEFB;
-    color: #E5FFB5;
-
+#menu li.active {
+  background-color: #bbdefb;
+  background: #bbdefb;
+  color: #e5ffb5;
 }
-#menu li a{
-	text-decoration:underline;
-	color: #000;
+#menu li a {
+  text-decoration: underline;
+  color: #000;
+  font-size: 1.5em;
 }
-
 
 #menu li a,
-#menu li.active a{
-	padding: 4px 4px;
-	display:block;
+#menu li.active a {
+  padding: 4px 4px;
+  display: block;
 }
-#menu li.active a{
-	color: black;
-	text-decoration: none;
+#menu li.active a {
+  color: black;
+  text-decoration: none;
 }
-
 
 #menu #home {
-	position: fixed;
-	left: 47%;
-	z-index: 70;
+  position: fixed;
+  left: 47%;
+  z-index: 70;
 }
 
 #menu #projects {
-	position: fixed;
-	left: 0;
-	top: 40%;
-	z-index: 70;
-	transform: rotate(90deg);
+  position: fixed;
+  left: 0;
+  top: 40%;
+  z-index: 70;
+  transform: rotate(90deg);
 }
 
 #menu #contact {
-	position: fixed;
-	right: 0%;
-	top: 40%;
-	z-index: 70;
-	z-index: 70;
-	transform: rotate(270deg);
+  position: fixed;
+  right: 0%;
+  top: 40%;
+  z-index: 70;
+  z-index: 70;
+  transform: rotate(270deg);
 }
 
 #menu #about {
-	position: fixed;
-	left: 47%;
-	z-index: 70;
-	bottom: 0;
+  position: fixed;
+  left: 47%;
+  z-index: 70;
+  bottom: 0;
 }
 
+@media only screen and (max-device-width: 800px) {
+  #menu #home,
+  #menu #about {
+    left: 40%;
+  }
 
-
-@media only screen and (max-device-width:800px){
-  #menu #home, #menu #about {
-	left: 40%;
-  };
-
-
-#menu li {
-	margin: 0px;
-}
-
-
+  #menu li {
+    margin: 0px;
+  }
 }
 
 /* Section 1 -- Homepage
  * --------------------------------------- */
 
-#myVideo{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	top:0;
-	right:0;
-	width: 100%;
-	height: 100%;
-	background-size: 100% 100%;
-		background-color: black;
-		background-image:url('imgs/Behind-the-screen.mp4');
-		background-position: center center;
-		background-size: contain;
- 		object-fit: cover;
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-image: url('imgs/Behind-the-screen.mp4');
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
 }
 
-		#section1 .layer{
-			position: absolute;
-			width: 100%;
-			left: 0;
-			top: 43%;
-			height: 100%;
-		}
+#section1 .layer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 43%;
+  height: 100%;
+}
 
 #section1 {
-	background-size: contain;
+  background-size: contain;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 #section1 h2 {
-	text-transform: uppercase;
-	letter-spacing: 20px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
 }
 
 h2 {
@@ -225,29 +245,26 @@ h2 {
   -o-animation-iteration-count: once;
 }
 
-
-
-#section1 img{
-	margin: 20px 0;
-	opacity: 0.7;
+#section1 img {
+  margin: 20px 0;
+  opacity: 0.7;
 }
 
 /* Section 2 -- latest projects
  * --------------------------------------- */
-#section2 p{
-	font-size: 15px;
+#section2 p {
+  font-size: 15px;
 }
 
-@media only screen and (max-device-width:600px){
-#section2 img{
-	width: 60%;
-}
+@media only screen and (max-device-width: 600px) {
+  #section2 img {
+    width: 60%;
+  }
 }
 
 #section2 {
-	background-color: white;
+  background-color: white;
 }
-
 
 /* Section 3 -- contact
  * --------------------------------------- */
@@ -256,70 +273,76 @@ h2 {
   display: inline-block;
   width: 100px;
   height: 100px;
-  margin: 20PX 12px;
+  margin: 20px 12px;
   line-height: 100px;
   font-size: 4em;
   text-align: center;
   border-radius: 50%;
   background: #eee;
- 	text-decoration: none;
+  text-decoration: none;
 }
 
 .social .fa {
-	color: black;
-
+  color: black;
 }
 
-
-#section3 p{
-	color: #757575;
+#section3 p {
+  color: #757575;
 }
 
-
-
-@media only screen and (max-device-width:500px){
+@media only screen and (max-device-width: 500px) {
   .social {
-  margin: 0PX 0px;
+    margin: 0px 0px;
   }
-
-
 }
 
 /* Section 4 -- About me
  * --------------------------------------- */
-#section4 {
 
-/*	  background: url(imgs/macbook.png) no-repeat center center fixed; 
-*/  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-} 
-
-#section4 p , h2 {
-	color: white;
+#section4 p,
+h2 {
+  color: white;
 }
 
 /* Overwriting fullPage.js tooltip color + PP nav is the dot nav
 * --------------------------------------- */
 #pp-nav {
-	display: none;
+  display: none;
 }
-#pp-nav.custom .pp-tooltip{
-	color: #AAA;
+#pp-nav.custom .pp-tooltip {
+  color: #aaa;
 }
 
 /*Controls the speed of apge transition*/
-    	.pp-easing {
-		    -webkit-transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    -moz-transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    -o-transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    transition: all 800ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    /* custom */
-		    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-		    /* custom */
-		}
+.pp-easing {
+  -webkit-transition: all 800ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  -moz-transition: all 800ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  -o-transition: all 800ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  transition: all 800ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  -o-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  /* custom */
+}
+
+/* title styling */
+.stroke {
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #111827;
+  -moz-text-stroke-color: #111827;
+  color: transparent;
+}
+
+.shadow {
+  text-shadow: 6px 6px #db2777;
+}
+
+.stroke-shadow {
+  color: #fef3c7;
+  text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827,
+    2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827,
+    6px 6px #db2777;
+}
