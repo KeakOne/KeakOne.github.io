@@ -304,6 +304,11 @@ h2 {
   color: white;
 }
 
+#section4 p {
+  font-size: 1.2em;
+  /* overflow: scroll; */
+}
+
 /* Overwriting fullPage.js tooltip color + PP nav is the dot nav
 * --------------------------------------- */
 #pp-nav {
