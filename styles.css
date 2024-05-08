@@ -310,11 +310,11 @@ h2 {
 }
 
 .about a:link,
-a:visited,
-a:hover,
-a:active,
-a {
-  color: db2777;
+.about a:visited,
+.about a:hover,
+.about a:active,
+.about a {
+  color: #db2777;
 }
 
 /* Overwriting fullPage.js tooltip color + PP nav is the dot nav
