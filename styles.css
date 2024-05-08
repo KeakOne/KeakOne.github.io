@@ -133,7 +133,7 @@ p {
 #menu li a {
   text-decoration: underline;
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 #menu li a,
@@ -154,7 +154,7 @@ p {
 
 #menu #projects {
   position: fixed;
-  left: 0;
+  left: -30px;
   top: 40%;
   z-index: 70;
   transform: rotate(90deg);
@@ -162,7 +162,7 @@ p {
 
 #menu #contact {
   position: fixed;
-  right: 0%;
+  right: -30px;
   top: 40%;
   z-index: 70;
   z-index: 70;
@@ -307,6 +307,14 @@ h2 {
 #section4 p {
   font-size: 1.2em;
   /* overflow: scroll; */
+}
+
+.about a:link,
+a:visited,
+a:hover,
+a:active,
+a {
+  color: db2777;
 }
 
 /* Overwriting fullPage.js tooltip color + PP nav is the dot nav
