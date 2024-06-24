@@ -126,8 +126,8 @@ p {
   border-radius: 2px;
 }
 #menu li.active {
-  background-color: #bbdefb;
-  background: #bbdefb;
+  background-color: #fef3c7;
+  background: #fef3c7;
   color: #e5ffb5;
 }
 #menu li a {
@@ -227,24 +227,6 @@ p {
   letter-spacing: 20px;
 }
 
-h2 {
-  animation-duration: 2000s;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
-
-  -moz-animation-duration: 3s;
-  -moz-animation-delay: 1s;
-  -moz-animation-iteration-count: once;
-
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: once;
-
-  -o-animation-duration: 3s;
-  -o-animation-delay: 1s;
-  -o-animation-iteration-count: once;
-}
-
 #section1 img {
   margin: 20px 0;
   opacity: 0.7;
@@ -305,8 +287,11 @@ h2 {
 }
 
 #section4 p {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   /* overflow: scroll; */
+  font-size: calc(
+    1rem + 0.5vw
+  ); /* Will increase font size as viewport width increases */
 }
 
 .about a:link,
